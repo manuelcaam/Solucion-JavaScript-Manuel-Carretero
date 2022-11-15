@@ -1,16 +1,11 @@
-/**
- * @author: Escriba su nombre y apellidos aquí.
- */
-
-/**
- * Comprueba la mayoría de edad
- * @param {int} edad 
- * @returns true | false;
- */
-
 function esMayorEdad(edad)
 {
-    return 0; // Debe escribir el código correcto AQUÍ.
+    if(edad<18){
+        return false;
+    }
+    else{
+        return true;
+    // Debe escribir el código correcto AQUÍ.
 }
 /**
  * Obtiene la calificación equivalente a la nota numérica
@@ -35,14 +30,16 @@ function comprobarEdad()
     var edad=Number.parseInt(document.getElementById("edad").value);
     console.log('Edad: '+edad);
     console.log('Mayoría de edad?: '+esMayorEdad(edad));
-    var txtEdad="Usted es menor de edad."
+    var txtEdad="Usted es menor de edad.";
     
-    if(esMayorEdad(edad))
-        txtEdad="Usted es mayor de edad."
-    
+    if(esMayorEdad(edad)){
+        txtEdad="Usted es mayor de edad.";
+    };
     document.getElementById("txtEdad").innerHTML=txtEdad;
-    
-}
+
+}    
+
+
 /**
  * Escribe la calificación asociada a la nota en la página HTML.
  */
