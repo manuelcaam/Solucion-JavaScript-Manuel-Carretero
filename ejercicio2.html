@@ -21,6 +21,20 @@
                     Alerta >> Usted ya es mayor de edad; por tanto, ya podría conducir
                 fsi 
             */
+           
+           let edad = prompt("¿How de viejo are you?");
+           
+           while(isNaN(edad)){
+            window.alert("Solo se aceptan númeroS");
+            edad = prompt("¿How de viejo are you?");
+           };
+           
+           if(edad >= 18){
+            window.alert("Usted ya es mayor de edad; por tanto, ya podría conducir");
+           } else{
+            window.alert("Usted no tiene edad para conducir");
+           };
+           
         </script>
     </body>
 </html>
